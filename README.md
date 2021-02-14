@@ -1,1 +1,1 @@
-# gitee
+# logseq sync to public
