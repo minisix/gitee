@@ -1,2 +1,115 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron|Raleway|Roboto");
 @import url('https://cdn.jsdelivr.net/gh/dracula/logseq@master/custom.css');
+
+@import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
+
+:root {
+  --ls-block-bullet-active-color: your-favorite-color;
+  --ls-block-bullet-threading-width: 2px;
+
+
+
+/* 白色主题 */
+.white-theme a.tag[data-ref="RR"] {
+  color: pink;
+  background: red;
+  text-decoration-color: red;
+}
+
+/* 黑色主题 */
+.dark-theme a.tag[data-ref="ChangeLog"] {
+  color: blue;
+  background: yellow;
+  text-decoration-color: green;
+}
+
+
+/* Custom Tag emoji's */
+/* STAR */
+a.tag[data-ref="star" i]::before {
+    content: "⭐";
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: var(--blue);
+    box-shadow: 0 0 4px var(--blue);
+}
+
+a.tag[data-ref="star" i] {
+    visibility: hidden;
+    width: 24px;
+    white-space: nowrap;
+}
+
+/* IDEA */
+a.tag[data-ref="idea" i]::before {
+    content: "💡";
+    visibility: visible;
+    border-radius: 2px;
+    padding: 2px;
+    background: var(--blue);
+    box-shadow: 0 0 4px var(--blue-hover);
+}
+
+a.tag[data-ref="idea" i] {
+    visibility: hidden;
+    width: 24px;
+    white-space: nowrap;
+}
+
+/* ==== colorful indent levels ===*/
+.block-children {
+	border-left: 0px solid;
+}
+.block-children [level="3"] {
+	border-left: 1px solid;
+	border-left-color: #ff00005c;}
+.block-children [level="4"] {
+	border-left: 1px solid;
+	border-left-color: #ec87225e;}
+.block-children [level="5"] {
+	border-left: 1px solid;
+	border-left-color: #ffff0052;}
+.block-children [level="6"] {
+	border-left: 1px solid;
+	border-left-color: #65d95b7a;}
+.block-children [level="7"] {
+	border-left: 1px solid;
+	border-left-color: #2ca0df5e;}
+.block-children [level="8"] {
+	border-left: 1px solid;
+	border-left-color: #9f8af061;}
+.block-children [level="9"] {
+	border-left: 1px solid;
+	border-left-color: #f15bf74f;}
+/* ==== fix spacing - TWEAK VALUES ! ===*/
+.ls-block { margin:-2px 0px -2px -1px !important; padding: 4px 1px !important;}
+
+
+/*===================================================*/     
+/*= highlight current path by cannnibalox v20210220 =*/ 
+/*====== option: (:hover) to (:focus-whithin) =======*/
+
+.ls-block .bullet{
+    background-color:#dd0707;
+}
+
+.ls-block:not(:hover) .bullet{
+    background-color:var(--ls-block-bullet-color);
+}
+
+/*--- highlight indentation line - remove if not useful ---*/
+/*---- tweak left: and top: offset to match yout theme ----*/
+.blocks-container > div:not(:first-child) .ls-block:hover > div:first-child .bullet:before{
+    content : "└─";
+	color:#6e2222;
+	display: inline-block;
+	left: -20px;
+	top: -10px;
+	width: 30px;
+	position: relative;
+}
+.ls-block > .block-children:hover {
+	border-left-color:#6e2222;
+	border-left-width: 2px;
+}
