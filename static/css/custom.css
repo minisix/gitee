@@ -7,7 +7,7 @@
   --ls-block-bullet-active-color: your-favorite-color;
   --ls-block-bullet-threading-width: 2px;
 
-
+}
 
 /* 白色主题 */
 .white-theme a.tag[data-ref="RR"] {
@@ -59,8 +59,7 @@ a.tag[data-ref="idea" i] {
 
 /* ==== colorful indent levels ===*/
 .block-children {
-	border-left: 0px solid;
-}
+	border-left: 0px solid;}
 .block-children [level="3"] {
 	border-left: 1px solid;
 	border-left-color: #ff00005c;}
@@ -112,4 +111,50 @@ a.tag[data-ref="idea" i] {
 .ls-block > .block-children:hover {
 	border-left-color:#6e2222;
 	border-left-width: 2px;
+}
+  
+/* ==mark==  tweaks */
+
+mark {
+  background: var(--mark-bg);
+  color: var(--ls-primary-text-color);
+  padding: 1px 2px;
+  margin: 0 2px;
+  border-radius: 3px;
+}
+
+mark.yellow {
+  background-color:#F8C261;
+}
+
+mark.pink {
+  background-color:#EA577C;
+}
+
+mark.blue {
+  background-color:#67B6E6;
+}
+
+mark.green {
+  background-color:#1BB0BD;
+}
+
+mark.red {
+  background-color:#BC403B;
+}
+
+mark.grey {
+  background-color:#808080;
+}
+
+mark.gray {
+  background-color:#808080;
+}
+
+mark.orange {
+  background-color:#FE9764;
+}
+
+mark.purple {
+  background-color:#805AE2;
 }
