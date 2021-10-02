@@ -9,18 +9,11 @@
 
 }
 
-/* 白色主题 */
-.white-theme a.tag[data-ref="RR"] {
-  color: pink;
-  background: red;
-  text-decoration-color: red;
-}
-
-/* 黑色主题 */
-.dark-theme a.tag[data-ref="ChangeLog"] {
-  color: blue;
-  background: yellow;
-  text-decoration-color: green;
+/* Custom Data Tags */
+a.tag[data-ref="ChangeLog"] {
+  color: var( --foreground);
+  background: var(--green);
+  text-decoration-color:red;
 }
 
 
