@@ -1,13 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron|Raleway|Roboto");
-@import url('https://cdn.jsdelivr.net/gh/dracula/logseq@master/custom.css');
-
 @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
+@import url('https://cdn.jsdelivr.net/gh/dracula/logseq@master/custom.css');
 
 :root {
   --ls-block-bullet-active-color: your-favorite-color;
   --ls-block-bullet-threading-width: 2px;
-
+	font-size: 17px;
 }
+
+body, html, a, div, textarea {
+  font-family: "Orbitron", serif,"Raleway", monospace, "未来荧黑", sans-serif !important;
+}
+
+code {
+  border-radius: 0;
+  margin-left: 2px;
+  border: none;
+  background-image: linear-gradient(to right, #F4F0F0, #EEEEEE);
+}
+
 
 /* Custom Data Tags */
 a.tag[data-ref="ChangeLog"] {
@@ -106,8 +117,9 @@ a.tag[data-ref="idea" i] {
 	border-left-width: 2px;
 }
   
-/* ==mark==  tweaks */
 
+
+/* ==mark==  tweaks */
 mark {
   background: var(--mark-bg);
   color: var(--ls-primary-text-color);
@@ -116,38 +128,12 @@ mark {
   border-radius: 3px;
 }
 
-mark.yellow {
-  background-color:#F8C261;
-}
-
-mark.pink {
-  background-color:#EA577C;
-}
-
-mark.blue {
-  background-color:#67B6E6;
-}
-
-mark.green {
-  background-color:#1BB0BD;
-}
-
-mark.red {
-  background-color:#BC403B;
-}
-
-mark.grey {
-  background-color:#808080;
-}
-
-mark.gray {
-  background-color:#808080;
-}
-
-mark.orange {
-  background-color:#FE9764;
-}
-
-mark.purple {
-  background-color:#805AE2;
-}
+mark.yellow {background-color:#F8C261;}
+mark.pink {background-color:#EA577C;}
+mark.blue {background-color:#67B6E6;}
+mark.green {background-color:#1BB0BD;}
+mark.red {background-color:#BC403B;}
+mark.grey {background-color:#808080;}
+mark.gray {background-color:#808080;}
+mark.orange {background-color:#FE9764;}
+mark.purple {background-color:#805AE2;}
