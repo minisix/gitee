@@ -1,7 +1,0 @@
-2021-11-24 04:10:45: FTP: Server rejected UTF-8 that it promised us: Unknown command
-2021-11-24 04:10:45: -- Analysis Started by On File Change Incremental
-2021-11-24 04:10:48: Changes: 314, Conflicts: 0, CopyTime: 0, CopyState: 0/0, Errors: 0, All: 317
-2021-11-24 04:10:48: Left to Right: Delete File: 314 
-2021-11-24 04:10:49: == Sync Started by On File Change Incremental
-2021-11-24 04:10:49: 99% (314 / 317) files have changed (excluding renames), more than a threshold of 50%. So the job will not synchronize automatically.
-2021-11-24 04:10:49: 

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron|Raleway|Roboto");
-/* @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
-@import url('https://cdn.jsdelivr.net/gh/dracula/logseq@master/custom.css'); */
+@import url('https://cdn.jsdelivr.net/gh/dracula/logseq@master/custom.css');
 
 :root {
   --ls-block-bullet-active-color: your-favorite-color;
@@ -10,6 +9,7 @@
 
 body, html, a, div, textarea {
   font-family: "Orbitron", serif,"Raleway", monospace, "未来荧黑", sans-serif !important;
+  font-size: 18px;
 }
 
 code {
@@ -20,46 +20,30 @@ code {
 }
 
 
-/* Custom Data Tags */
-a.tag[data-ref="ChangeLog"] {
-  color: var( --foreground);
-  background: var(--green);
-  text-decoration-color:red;
+   /* ========  侧边栏设置成竖屏显示 ========  */
+.sidebar-item.content.color-level.px-4.shadow-lg {
+    min-width: 33vw;
+    overflow-y: scroll;
 }
 
-
-/* Custom Tag emoji's */
-/* STAR */
-a.tag[data-ref="star" i]::before {
-    content: "⭐";
-    visibility: visible;
-    border-radius: 2px;
-    padding: 2px;
-    background: var(--blue);
-    box-shadow: 0 0 4px var(--blue);
+.sidebar-item-list.flex-1.scrollbar-spacing {
+    display: flex;
 }
 
-a.tag[data-ref="star" i] {
-    visibility: hidden;
-    width: 24px;
-    white-space: nowrap;
+div#right-sidebar {
+    width: 50%;
 }
 
-/* IDEA */
-a.tag[data-ref="idea" i]::before {
-    content: "💡";
-    visibility: visible;
-    border-radius: 2px;
-    padding: 2px;
-    background: var(--blue);
-    box-shadow: 0 0 4px var(--blue-hover);
+div#right-sidebar, .cp__right-sidebar-scrollable {
+    height: calc(100vh - 48px);
+    scroll: initial;
 }
 
-a.tag[data-ref="idea" i] {
-    visibility: hidden;
-    width: 24px;
-    white-space: nowrap;
+.sidebar-item-list.flex-1.scrollbar-spacing {
+    padding-bottom: 0;
+    /* margin-bottom: 10px; */
 }
+
 
 /* ==== colorful indent levels ===*/
 .block-children {
@@ -116,10 +100,8 @@ a.tag[data-ref="idea" i] {
 	border-left-color:#6e2222;
 	border-left-width: 2px;
 }
-  
 
-
-/* ==mark==  tweaks */
+/* ==mark==  tweaks 
 mark {
   background: var(--mark-bg);
   color: var(--ls-primary-text-color);
@@ -137,3 +119,50 @@ mark.grey {background-color:#808080;}
 mark.gray {background-color:#808080;}
 mark.orange {background-color:#FE9764;}
 mark.purple {background-color:#805AE2;}
+*/
+
+/* ==mark==  tweaks */
+
+mark {
+  background: var(--mark-bg);
+  color: var(--ls-primary-text-color);
+  padding: 1px 2px;
+  margin: 0 2px;
+  border-radius: 3px;
+}
+
+mark.yellow {
+  background-color: #ffe85580;
+}
+
+mark.pink {
+  background-color: #ff89be80;
+}
+
+mark.blue {
+  background-color: #84b5ff80;
+}
+
+mark.green {
+  background-color: #97ff9780;
+}
+
+mark.red {
+  background-color: #ff558280;
+}
+
+mark.grey {
+  background-color: #80808080;
+}
+
+mark.gray {
+  background-color: #80808080;
+}
+
+mark.orange {
+  background-color: #ffb86c80;
+}
+
+mark.purple {
+  background-color: #c097ff80;
+}
