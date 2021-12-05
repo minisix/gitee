@@ -1,0 +1,9 @@
+2021-12-01 03:15:54: FTP: Server rejected UTF-8 that it promised us: Unknown command
+2021-12-01 03:15:55: -- Analysis Started by On File Change, After Delay
+2021-12-01 03:15:55: 变更：9， 冲突：0， 复制时间：0， 复制状态：0/0， 错误： 0, All: 442
+2021-12-01 03:15:55: Left to Right: Copy File: 9 
+2021-12-01 03:15:55: == Sync Started by On File Change, After Delay
+2021-12-01 03:15:55: 创建文件夹 'ftp://47.112.120.167/note/.git/objects/42'
+2021-12-01 03:15:56: 创建文件夹 'ftp://47.112.120.167/note/.git/objects/f9'
+2021-12-01 03:15:57: ===== ：同步完毕。时间：00:00:02，速度： 8.1 KB/s =====, 项目同步未必： 2，错误： 0
+2021-12-01 03:15:58: 
