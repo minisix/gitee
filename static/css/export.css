@@ -63,8 +63,11 @@ code {
      display: none;
    } */
 
+@import './base.css';
+
 .dark-theme,
 html[data-theme='dark'] {
+    --bg-url: url(https://i.imgur.com/HXoGeOC.jpg);
     --background-color-h: 220;
     --background-color-s: 16%;
     --background-color-l: 14%;
@@ -84,6 +87,7 @@ html[data-theme='dark'] {
 
 .white-theme,
 html[data-theme='light'] {
+      --bg-url: url(https://i.imgur.com/HXoGeOC.jpg);
     --background-color-h: 218;
     --background-color-s: 27%;
     --background-color-l: 94%;
