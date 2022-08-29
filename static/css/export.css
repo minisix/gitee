@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron|Raleway|Roboto");
+/*@import url('https://cdn.jsdelivr.net/gh/dracula/logseq@master/custom.css'); */
+
+:root {
+  --ls-block-bullet-active-color: your-favorite-color;
+  --ls-block-bullet-threading-width: 2px;
+	font-size: 18px;
+}
+
+body, html, a, div, textarea {
+  font-family: "Orbitron", serif,"Raleway", monospace, "未来荧黑", sans-serif !important;
+  font-size: 18px;
+}
+
+code {
+  border-radius: 0;
+  margin-left: 2px;
+  border: none;
+  background-image: linear-gradient(to right, #F4F0F0, #EEEEEE);
+}
+
+
+   /* ========  侧边栏设置成竖屏显示 ========  */
+.sidebar-item.content.color-level.px-4.shadow-lg {
+    min-width: 33vw;
+    overflow-y: scroll;
+}
+
+.sidebar-item-list.flex-1.scrollbar-spacing {
+    display: flex;
+}
+
+div#right-sidebar {
+    width: 50%;
+}
+
+div#right-sidebar, .cp__right-sidebar-scrollable {
+    height: calc(100vh - 48px);
+    scroll: initial;
+}
+
+.sidebar-item-list.flex-1.scrollbar-spacing {
+    padding-bottom: 0;
+    /* margin-bottom: 10px; */
+}
+
+
+/* ==== colorful indent levels ===*/
+.block-children {
+	border-left: 0px solid;}
+.block-children [level="3"] {
+	border-left: 1px solid;
+	border-left-color: #ff00005c;}
+.block-children [level="4"] {
+	border-left: 1px solid;
+	border-left-color: #ec87225e;}
+.block-children [level="5"] {
+	border-left: 1px solid;
+	border-left-color: #ffff0052;}
+.block-children [level="6"] {
+	border-left: 1px solid;
+	border-left-color: #65d95b7a;}
+.block-children [level="7"] {
+	border-left: 1px solid;
+	border-left-color: #2ca0df5e;}
+.block-children [level="8"] {
+	border-left: 1px solid;
+	border-left-color: #9f8af061;}
+.block-children [level="9"] {
+	border-left: 1px solid;
+	border-left-color: #f15bf74f;}
+/* ==== fix spacing - TWEAK VALUES ! ===*/
+.ls-block { margin:-2px 0px -2px -1px !important; padding: 4px 1px !important;}
+
+
+/*===================================================*/     
+/*= highlight current path by cannnibalox v20210220 =*/ 
+/*====== option: (:hover) to (:focus-whithin) =======*/
+
+.ls-block .bullet{
+    background-color:#dd0707;
+}
+
+.ls-block:not(:hover) .bullet{
+    background-color:var(--ls-block-bullet-color);
+}
+
+/*--- highlight indentation line - remove if not useful ---*/
+/*---- tweak left: and top: offset to match yout theme ----*/
+.blocks-container > div:not(:first-child) .ls-block:hover > div:first-child .bullet:before{
+    content : "└─";
+	color:#6e2222;
+	display: inline-block;
+	left: -20px;
+	top: -10px;
+	width: 30px;
+	position: relative;
+}
+.ls-block > .block-children:hover {
+	border-left-color:#6e2222;
+	border-left-width: 2px;
+}
+
+/* ==mark==  tweaks 
+mark {
+  background: var(--mark-bg);
+  color: var(--ls-primary-text-color);
+  padding: 1px 2px;
+  margin: 0 2px;
+  border-radius: 3px;
+}
+
+mark.yellow {background-color:#F8C261;}
+mark.pink {background-color:#EA577C;}
+mark.blue {background-color:#67B6E6;}
+mark.green {background-color:#1BB0BD;}
+mark.red {background-color:#BC403B;}
+mark.grey {background-color:#808080;}
+mark.gray {background-color:#808080;}
+mark.orange {background-color:#FE9764;}
+mark.purple {background-color:#805AE2;}
+*/
+
+/* ==mark==  tweaks */
+
+mark {
+  background: var(--mark-bg);
+  color: var(--ls-primary-text-color);
+  padding: 1px 2px;
+  margin: 0 2px;
+  border-radius: 3px;
+}
+
+mark.yellow {
+  background-color: #ffe85580;
+}
+
+mark.pink {
+  background-color: #ff89be80;
+}
+
+mark.blue {
+  background-color: #84b5ff80;
+}
+
+mark.green {
+  background-color: #97ff9780;
+}
+
+mark.red {
+  background-color: #ff558280;
+}
+
+mark.grey {
+  background-color: #80808080;
+}
+
+mark.gray {
+  background-color: #80808080;
+}
+
+mark.orange {
+  background-color: #ffb86c80;
+}
+
+mark.purple {
+  background-color: #c097ff80;
+}
