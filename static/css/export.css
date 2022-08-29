@@ -4,7 +4,7 @@
 :root {
   --ls-block-bullet-active-color: your-favorite-color;
   --ls-block-bullet-threading-width: 2px;
-	font-size: 17px;
+	font-size: 18px;
 }
 
 body, html, a, div, textarea {
@@ -63,124 +63,40 @@ code {
      display: none;
    } */
 
-/* ==== colorful indent levels ===*/
-.block-children {
-	border-left: 0px solid;}
-.block-children [level="3"] {
-	border-left: 1px solid;
-	border-left-color: #ff00005c;}
-.block-children [level="4"] {
-	border-left: 1px solid;
-	border-left-color: #ec87225e;}
-.block-children [level="5"] {
-	border-left: 1px solid;
-	border-left-color: #ffff0052;}
-.block-children [level="6"] {
-	border-left: 1px solid;
-	border-left-color: #65d95b7a;}
-.block-children [level="7"] {
-	border-left: 1px solid;
-	border-left-color: #2ca0df5e;}
-.block-children [level="8"] {
-	border-left: 1px solid;
-	border-left-color: #9f8af061;}
-.block-children [level="9"] {
-	border-left: 1px solid;
-	border-left-color: #f15bf74f;}
-/* ==== fix spacing - TWEAK VALUES ! ===*/
-.ls-block { margin:-2px 0px -2px -1px !important; padding: 4px 1px !important;}
-
-
-/*===================================================*/     
-/*= highlight current path by cannnibalox v20210220 =*/ 
-/*====== option: (:hover) to (:focus-whithin) =======*/
-
-.ls-block .bullet{
-    background-color:#dd0707;
+.dark-theme,
+html[data-theme='dark'] {
+    --background-color-h: 220;
+    --background-color-s: 16%;
+    --background-color-l: 14%;
+    --primary-color-h: 193;
+    --primary-color-s: 43%;
+    --primary-color-l: 67%;
+    --secondary-color-h: 179;
+    --secondary-color-s: 25%;
+    --secondary-color-l: 65%;
+    --accent-color-h: 311;
+    --accent-color-s: 20%;
+    --accent-color-l: 63%;
+    --primary-text-h: 218;
+    --primary-text-s: 27%;
+    --primary-text-l: 94%;
 }
 
-.ls-block:not(:hover) .bullet{
-    background-color:var(--ls-block-bullet-color);
-}
-
-/*--- highlight indentation line - remove if not useful ---*/
-/*---- tweak left: and top: offset to match yout theme ----*/
-.blocks-container > div:not(:first-child) .ls-block:hover > div:first-child .bullet:before{
-    content : "└─";
-	color:#6e2222;
-	display: inline-block;
-	left: -20px;
-	top: -10px;
-	width: 30px;
-	position: relative;
-}
-.ls-block > .block-children:hover {
-	border-left-color:#6e2222;
-	border-left-width: 2px;
-}
-
-/* ==mark==  tweaks 
-mark {
-  background: var(--mark-bg);
-  color: var(--ls-primary-text-color);
-  padding: 1px 2px;
-  margin: 0 2px;
-  border-radius: 3px;
-}
-
-mark.yellow {background-color:#F8C261;}
-mark.pink {background-color:#EA577C;}
-mark.blue {background-color:#67B6E6;}
-mark.green {background-color:#1BB0BD;}
-mark.red {background-color:#BC403B;}
-mark.grey {background-color:#808080;}
-mark.gray {background-color:#808080;}
-mark.orange {background-color:#FE9764;}
-mark.purple {background-color:#805AE2;}
-*/
-
-/* ==mark==  tweaks */
-
-mark {
-  background: var(--mark-bg);
-  color: var(--ls-primary-text-color);
-  padding: 1px 2px;
-  margin: 0 2px;
-  border-radius: 3px;
-}
-
-mark.yellow {
-  background-color: #ffe85580;
-}
-
-mark.pink {
-  background-color: #ff89be80;
-}
-
-mark.blue {
-  background-color: #84b5ff80;
-}
-
-mark.green {
-  background-color: #97ff9780;
-}
-
-mark.red {
-  background-color: #ff558280;
-}
-
-mark.grey {
-  background-color: #80808080;
-}
-
-mark.gray {
-  background-color: #80808080;
-}
-
-mark.orange {
-  background-color: #ffb86c80;
-}
-
-mark.purple {
-  background-color: #c097ff80;
+.white-theme,
+html[data-theme='light'] {
+    --background-color-h: 218;
+    --background-color-s: 27%;
+    --background-color-l: 94%;
+    --primary-color-h: 193;
+    --primary-color-s: 53%;
+    --primary-color-l: 50%;
+    --secondary-color-h: 179;
+    --secondary-color-s: 39%;
+    --secondary-color-l: 55%;
+    --accent-color-h: 312;
+    --accent-color-s: 32%;
+    --accent-color-l: 56%;
+    --primary-text-h: 222;
+    --primary-text-s: 16%;
+    --primary-text-l: 28%;
 }
